@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   so_long_bonus.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smazouz <smazouz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 16:30:09 by smazouz           #+#    #+#             */
-/*   Updated: 2022/02/02 17:49:08 by smazouz          ###   ########.fr       */
+/*   Updated: 2022/02/02 18:01:54 by smazouz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SO_LONG_H
-# define SO_LONG_H
+#ifndef SO_LONG_BONUS_H
+# define SO_LONG_BONUS_H
 
 # include<stdio.h>
 # include<unistd.h>
@@ -66,6 +66,7 @@ void	find_player_p(t_game *player, char **map);
 void	ft_put_map_items(void *mlx, void *mlx_win, char **map, t_game *player);
 int		ft_collectible_count(char **map);
 int		ft_exit(t_game *player);
+int		animation(t_game *player);
 int		ft_loop_for_cheater(char **loop);
 int		ft_check_lines(char *str);
 int		ft_check_first_last_line(char *line);
@@ -82,6 +83,8 @@ int		ft_height_of_map(char **map);
 void	p_and_next_e(int keycode, int *p_h, int *p_w, t_game *player);
 void	p_and_next_p(int keycode, int *p_h, int *p_w, t_game *player);
 void	find_player_p(t_game *player, char **map);
+void	ft_move_enemy(t_enemy *temp, t_game *player, int keycode);
+void	ft_move_enemys(t_game *player, int keycode);
 void	ft_move(t_game *player, int keycode);
 void	ft_print_moves(int x, t_game *player);
 int		key_hook(int keycode, t_game *player);
