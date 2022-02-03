@@ -6,7 +6,7 @@
 #    By: smazouz <smazouz@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/11 16:42:04 by smazouz           #+#    #+#              #
-#    Updated: 2022/02/02 17:45:34 by smazouz          ###   ########.fr        #
+#    Updated: 2022/02/03 18:06:52 by smazouz          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,7 @@ fclean : clean
 	$(RM) so_long so_long_bonus
 
 re : fclean all
+
 
 bonus :${OBJB} so_long_bonus.h
 	$(CC)  $(CFLAGS) ${OBJB} -lmlx -framework OpenGL -framework AppKit -o so_long_bonus
