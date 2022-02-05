@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ghrafique.c                                     :+:      :+:    :+:   */
+/*   ft_ghrafique_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smazouz <smazouz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 15:34:16 by smazouz           #+#    #+#             */
-/*   Updated: 2022/02/02 17:22:30 by smazouz          ###   ########.fr       */
+/*   Updated: 2022/02/05 13:50:07 by smazouz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_print_moves(int x, t_game *player)
 	mlx_put_image_to_window(player->mlx, player->mlx_win, g, 3 * B_Z, 0 * B_Z);
 	mlx_put_image_to_window(player->mlx, player->mlx_win, g, 4 * B_Z, 0 * B_Z);
 	mlx_put_image_to_window(player->mlx, player->mlx_win, g, 5 * B_Z, 0 * B_Z);
-	mlx_string_put(player->mlx, player->mlx_win, 5, 5, 0x00ffffff, m);
+	mlx_string_put(player->mlx, player->mlx_win, 5, 5, 0x00FFFF00, m);
 	free (m);
 }
 
