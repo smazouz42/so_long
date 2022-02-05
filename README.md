@@ -1,3 +1,3 @@
 # so_long
 
-![image](https://raw.githubusercontent.com/Ra-Wo/so_long/main/ScreenShot.png)
+![image](./Screen Shot 2022-02-05 at 1.51.06 PM.png)
